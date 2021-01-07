@@ -96,6 +96,8 @@ static void replace_safetynet_flags(char *cmd)
 			  "androidboot.secboot=enabled ");
 	replace_flag(cmd, "androidboot.verifiedbootstate=orange",
 			  "androidboot.verifiedbootstate=green ");
+	replace_flag(cmd, "lge.signed_image=false",
+			  "lge.signed_image=true ");
 }
 
 static int __init proc_cmdline_init(void)
